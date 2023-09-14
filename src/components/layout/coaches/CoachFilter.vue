@@ -29,12 +29,12 @@ export default {
     }
   },
   methods: {
-    setFilter() {
-      const inpitId = event.target.id
+    setFilter(event) {
+      const inputId = event.target.id
       const isActive = event.target.checked;
       const updatedFilters = {
         ...this.filteres,
-        [inpitId]: isActive
+        [inputId]: isActive
       }
       this.filteres = updatedFilters
       this.$emit('change-filter', updatedFilters);
