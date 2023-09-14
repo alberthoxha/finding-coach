@@ -9,7 +9,7 @@ export default {
   props: ['type', 'title'],
   computed: {
     text() {
-      return this.title.toUpperCase()
+      return this.title.toUpperCase();
     }
   }
 }

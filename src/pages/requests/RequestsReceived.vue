@@ -1,4 +1,3 @@
 <template>
-  <h2>Request</h2>
+  REQUESTS
 </template>
-<script></script>

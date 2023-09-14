@@ -7,7 +7,7 @@
     </div>
     <div class="actions">
       <base-button mode="outline" link :to="coachContactLink">Contact</base-button>
-      <base-button link :to="coachDetails">View Details</base-button>
+      <base-button link :to="coachDetailsLink">View Details</base-button>
     </div>
   </li>
 </template>
@@ -17,16 +17,16 @@ export default {
   props: ['id', 'firstName', 'lastName', 'rate', 'areas'],
   computed: {
     fullName() {
-      return this.firstName + " " + this.lastName
+      return this.firstName + ' ' + this.lastName;
     },
     coachContactLink() {
-      return this.$route.path + '/' + this.id + '/contact' //coaches/c1/contact
+      return this.$route.path + '/' + this.id + '/contact'; // /coaches/c1/contact
     },
-    coachDetails() {
+    coachDetailsLink() {
       return this.$route.path + '/' + this.id; // /coaches/c1
-    }
-  }
-}
+    },
+  },
+};
 </script>
 
 <style scoped>

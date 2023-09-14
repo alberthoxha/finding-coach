@@ -1,3 +1,3 @@
 <template>
-  Contact a Coach lorem
+  CONTACT A COACH
 </template>

@@ -37,15 +37,15 @@
 
 <script>
 export default {
-  emits: ['sava-data'],
+  emits: ['save-data'],
   data() {
     return {
       firstName: '',
       lastName: '',
       description: '',
       rate: null,
-      areas: []
-    }
+      areas: [],
+    };
   },
   methods: {
     submitForm() {
@@ -55,11 +55,12 @@ export default {
         desc: this.description,
         rate: this.rate,
         areas: this.areas
-      }
-      this.$emit('save-data', formData)
+      };
+
+      this.$emit('save-data', formData);
     }
   }
-}
+};
 </script>
 
 <style scoped>
@@ -73,7 +74,7 @@ label {
   margin-bottom: 0.5rem;
 }
 
-input[type='checkbox']+label {
+input[type="checkbox"] + label {
   font-weight: normal;
   display: inline;
   margin: 0 0 0 0.5rem;
@@ -94,13 +95,13 @@ textarea:focus {
   border-color: #3d008d;
 }
 
-input[type='checkbox'] {
+input[type="checkbox"] {
   display: inline;
   width: auto;
   border: none;
 }
 
-input[type='checkbox']:focus {
+input[type="checkbox"]:focus {
   outline: #3d008d solid 1px;
 }
 
